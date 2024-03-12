@@ -8,9 +8,10 @@ namespace Domain.Entities
 {
     public class Brand : BaseEntity
     {
-        public Guid ItemId { get; set; }
-        public Item Item { get; set; }
-        public string BrandName { get; set; }    
-        
+        public Guid ProductId { get; set; }
+        public Product Product { get; set; }
+        public string Name { get; set; }
+        public ICollection<Review>? Reviews { get; set; } = new HashSet<Review>();
+
     }
 }

@@ -8,9 +8,9 @@ namespace Domain.Entities
 {
     public class Category : BaseEntity
     {
-        public string CategoryName { get; set; }
+        public string Name { get; set; }
       
-       public ICollection<Item> Items { get; set;} = new HashSet<Item>();
+       public ICollection<Product> Products { get; set;} = new HashSet<Product>();
 
     }
 }

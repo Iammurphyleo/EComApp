@@ -10,11 +10,11 @@ namespace Domain.Entities
     public class Payment : BaseEntity
     {
         public Order Order { get; set; }
-        public Guid OrderId { get; set; }
+     
         public decimal Amount { get; set; }
-        public string PaymentReference { get; set; }   
-        public Customer Customer { get; set; }
-        public Guid CustomerId { get; set; }
+        public string PaymentReference { get; set; }
+        public User User { get; set; }
+        public Guid UserId { get; set; }
         public Status Status { get; set; }
 
     }

@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Domain.Entities;
 
-namespace Domain.Entities
+namespace Domain.DTO
 {
-    public class CartItem : BaseEntity
+    public class CartProduct : BaseEntity
     {
         public Guid CartId { get; set; }
 
         public Cart Cart { get; set; }
 
-        public Guid ItemId { get; set; }
+        public Guid ProductId { get; set; }
 
-        public Item Item { get; set; }
+        public Product Product { get; set; }
 
-        public int ItemQuantity { get; set; }
+        public int ProductQuantity { get; set; }
         public decimal UnitPrice { get; set; }
 
 

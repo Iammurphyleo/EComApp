@@ -9,7 +9,7 @@ namespace Domain.Enum
     public enum Status
     {
         Initiated = 1,
-          Cancel,
-            Compeleted
+        Cancel,
+        Compeleted
     }
 }

@@ -11,10 +11,10 @@ namespace Domain.Entities
     {
         public Guid Id { get; set; }
         public bool IsDeleted { get; set; }
-        public DateTime CreatedAt { get ; set; }
+        public DateTime CreatedAt { get ; set; } = DateTime.Now;
         public Guid CreatedBy { get; set; }
-        public DateTime? ModifiedAt { get ; set ; }
-        public Guid? ModifiedBy { get ; set ; }
+        public DateTime? ModifiedAt { get ; set;}
+        public Guid? ModifiedBy { get; set;}
     }  
         
 }
